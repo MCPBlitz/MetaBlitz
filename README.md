@@ -4,7 +4,6 @@
 
 # MCPBlitz
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mcpblitz/mcpblitz/ci.yml?branch=main)](https://github.com/mcpblitz/mcpblitz/actions)
 [![Twitter Follow](https://img.shields.io/twitter/follow/MCPBlitz?style=social)](https://x.com/MCPBlitz)
 [![Website](https://img.shields.io/badge/Website-MCPBlitz.world-blue)](http://www.mcpblitz.world)
 
@@ -290,7 +289,6 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 - **Official Website**: [http://www.mcpblitz.world](http://www.mcpblitz.world)
 - **Twitter**: [@MCPBlitz](https://x.com/MCPBlitz)
-- **Discord**: [Join our community](https://discord.gg/mcpblitz)
 
 ## License
 
