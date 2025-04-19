@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcpblitz-api
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+      - redis
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/mcpblitz
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=${JWT_EXPIRATION}
+      - TWITTER_API_KEY=${TWITTER_API_KEY}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_SECRET=${TWITTER_ACCESS_SECRET}
+      - INFURA_PROJECT_ID=${INFURA_PROJECT_ID}
+      - ETHERSCAN_API_KEY=${ETHERSCAN_API_KEY}
+    networks:
+      - mcpblitz-network
+
+  mongodb:
+    image: mongo:latest
+    container_name: mcpblitz-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mcpblitz-network
+
+  redis:
+    image: redis:alpine
+    container_name: mcpblitz-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - mcpblitz-network
+
+networks:
+  mcpblitz-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
+  redis-data: 
