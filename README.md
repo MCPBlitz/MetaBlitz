@@ -32,9 +32,6 @@ To accelerate market penetration, MCPBlitz offers full functionality (Basic and 
 
 MCPBlitz employs a modular, distributed architecture to ensure high performance, scalability, and security:
 
-<p align="center">
-  <img src="https://mermaid.ink/img/pako:eNqNkk1rhDAQhv_KMOcWbNVa8BBoe-yhUOihd5GYsQbzgckUivjfm2i6LUvpeoow877PM5PkEWQtEVKY6oZXDnvUjoH3Q2uVbsDBMeA1Gc9Eo9lYvVESf9u5FHKAdVIpJmRLZ_RIQbDyPCgoxYQl0wRntI6jcG5JcFEh38LT_rnKs2yTF3l5he8QTBNBwYwvpf81xA9Ux-CIAXPv81EKL0qRt9uiyA55UUDm_WRO6pTQqpGm2mNmujG1VwzG-vnjON7HvF6qs6sNbXvDG6HHhZWU5bZM0yLb5vS87V3wK8Q0TTsJMfDKgXOOvTJ-1jqj24RtktfkPaF3SPcMxrhX0mnTEfgU7BWxXyxK-z0?type=png" alt="MCPBlitz Architecture" width="600"/>
-</p>
 
 ## Technical Stack
 
